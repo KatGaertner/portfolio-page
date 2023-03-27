@@ -172,6 +172,11 @@ h2 {
     margin-right: auto;
 }
 
+figcaption {
+    font-size: var(--fontsize-navigation);
+    padding: 0 15px 0 15px;
+}
+
 /* Content specific */
 
 .profile {
@@ -179,11 +184,15 @@ h2 {
     margin: 0 auto;
 }
 
-.profile__photo {
+.profile__figure {
     float: left;
-    width: 250px;
-    height: auto;
+    max-width: 250px;
     margin-right: 40px;
+}
+
+.profile__photo {
+    max-width: 250px;
+    height: auto;
     border-radius: 10%;
 }
 
