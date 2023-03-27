@@ -187,12 +187,10 @@ figcaption {
 .profile__figure {
     float: left;
     max-width: 250px;
-    margin-right: 40px;
 }
 
 .profile__photo {
     max-width: 250px;
-    height: auto;
     border-radius: 10%;
 }
 
@@ -464,15 +462,28 @@ textarea:focus {
     }
 }
 
+@media all and (max-width: 600px) {
+    .profile {
+        margin: 20px auto;
+    }
+    
+    .profile__figure {
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+
+
 /* fix for scrollbar messing up the centering */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter */
 html {
     overflow-y: scroll;
-}
+} 
 
 @supports (scrollbar-gutter: stable) {
     html {
         overflow-y: auto;
         scrollbar-gutter: stable both-edges;
     }
-}
+} 
