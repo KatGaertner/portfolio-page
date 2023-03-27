@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact - Portfolio Page</title>
+    <link rel="shortcut icon" href="img/ico_favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="content-wrap">
+            <header class="page-header">
+
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                    y="0px" viewBox="1.551 1.834 41.475 14.38" xml:space="preserve"
+                    class="page-header__item page-header__logo">
+                    <title>Logo</title>
+                    <rect x="1.551" y="1.865" fill="#80CC3F" width="2" height="13.726" class="logo-line1" />
+                    <rect x="4.953" y="1.865" fill="#4960CC" width="2" height="13.726" class="logo-line2" />
+                    <rect x="8.354" y="1.865" fill="#8054cc" width="2" height="13.726" class="logo-line3" />
+                    <path d="M25.512,3.834v-2c-4.983,0-9.342,2.672-11.756,6.65v-6.62h-2V15.59h2c0-2.122,0.573-4.108,1.561-5.829l5.163,6.453
+	            l1.562-1.249l-5.535-6.918C18.664,5.476,21.898,3.834,25.512,3.834z" class="logo-K logo-kat" />
+                    <path d="M36.008,6.843V3.834h4.669v-2H29.339v2h4.669v3.009c0,4.972,4.045,9.018,9.018,9.018v-2
+	            C39.156,13.861,36.008,10.713,36.008,6.843z" class="logo-A logo-kat" />
+                    <path
+                        d="M31.898,10.627V4.958h-2v1.577C29,5.82,27.88,5.375,26.646,5.375c-2.896,0-5.252,2.356-5.252,5.252s2.356,5.252,5.252,5.252
+	            c1.752,0,3.297-0.871,4.252-2.194c0.955,1.323,2.5,2.194,4.252,2.194v-2C33.357,13.879,31.898,12.42,31.898,10.627z M26.646,13.879
+	            c-1.793,0-3.252-1.459-3.252-3.252s1.459-3.252,3.252-3.252s3.252,1.459,3.252,3.252S28.439,13.879,26.646,13.879z"
+                        class="logo-T logo-kat" />
+                </svg>
+
+                <nav class="page-header__item">
+                    <ul role="menubar" class="navigation-list">
+                        <li role="presentation">
+                            <a href="index.htm" role="menuitem" class="navigation-list__item">Home</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="about.htm" role="menuitem" class="navigation-list__item">About me</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="work.htm" role="menuitem" class="navigation-list__item">Work</a>
+                        </li>
+                        <li role="presentation">
+                            <span role="menuitem"
+                                class="navigation-list__item navigation-list__item--active">Contact</span>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <h1>Contact</h1>
+
+                <div>
+                    Telephone: <a href="#" aria-label="Call">Number</a><br>
+                    E-Mail: <a href="#" aria-label="E-mail">Address</a>
+                </div>
+
+                <p>
+                    <a href="#">Contact me!</a>
+                </p>
+
+                <form action="#" method="post">
+                    <div>
+                        <label for="contact-name">Name: (required) </label><br>
+                        <input type="text" id="contact-name" name="name" class="contact-item" required>
+                    </div>
+                    <div>
+                        <label for="contact-email">E-mail: (required) </label><br>
+                        <input type="email" id="contact-email" name="email" class="contact-item" required>
+                    </div>
+                    <div>
+                        <label for="contact-phone">Telephone: </label><br>
+                        <input type="tel" id="contact-phone" name="phone" class="contact-item"
+                            pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$">
+                    </div>
+                    <div>
+                        <label for="contact-message">Message: (required) </label><br>
+                        <textarea id="contact-message" name="message" maxlength="999" class="contact-item"
+                            required></textarea>
+                    </div>
+                    <input type="submit" value="Send message" class="button contact-item">
+                </form>
+
+
+            </main>
+        </div>
+        <footer class="page-footer">
+            <p>Find me on:</p>
+            <div class="page-footer__socials">
+                <a href="https://github.com/KatGaertner" target="_blank">
+                    <img src="img/ico_github.svg" alt="Github" title="GitHub" class="page-footer__icon"></a>
+                <a href="https://www.xing.com/profile/Kathrin_Gaertner11/" target="_blank">
+                    <img src="img/ico_xing.svg" alt="Xing" title="Xing" class="page-footer__icon"></a>
+            </div>
+        </footer>
+    </div>
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
