@@ -396,7 +396,7 @@ textarea:focus {
     animation-delay: 250ms;
 }
 
-.slide-up:last-child {
+.work-list .slide-up:last-child {
     animation-delay: 50ms;
 }
 
