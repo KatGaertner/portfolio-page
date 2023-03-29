@@ -16,6 +16,11 @@
     --sun-color2: #fcffad;
     --sun-color3: #f76414;
 
+    --border-radius-small: 10px;
+    --border-radius-big: 20px;
+    --border-radius-button: 20px;
+    --border-radius-input: 5px;
+
     --fontsize-normal: 16pt;
     --fontsize-navigation: 14pt;
     --fontsize-h1: 30pt;
@@ -48,7 +53,8 @@ body {
     background: var(--secondary-color);
 }
 
-/* TODO: <code> font */
+
+
 
 
 /* Header, footer and main */
@@ -136,9 +142,7 @@ main p {
     height: 30px;
 }
 
-.invisible {
-    display: none;
-}
+
 
 
 
@@ -172,18 +176,22 @@ h2 {
     font-weight: var(--fontweight-bold);
 }
 
-.center {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 figcaption {
     font-size: var(--fontsize-navigation);
     padding: 0 15px 0 15px;
 }
 
+
+
+
+
 /* Content specific */
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .content-narrow {
     max-width: 700px;
@@ -197,7 +205,7 @@ figcaption {
 
 .profile__photo {
     max-width: 250px;
-    border-radius: 10%;
+    border-radius: var(--border-radius-big);
 }
 
 .pic-container {
@@ -209,7 +217,8 @@ figcaption {
     border-spacing: 0 10px;
 }
 
-.about-table td, .about-table th {
+.about-table td,
+.about-table th {
     vertical-align: top;
     padding: 10px 10px;
     border-style: none;
@@ -218,19 +227,19 @@ figcaption {
 .about-table td:first-child {
     text-align: end;
     padding-left: 20px;
-    border-radius: 10px 0 0 10px;
+    border-radius: var(--border-radius-small) 0 0 var(--border-radius-small);
     min-width: fit-content;
 }
 
 .about-table td:last-child {
     padding-right: 20px;
     text-align: justify;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 var(--border-radius-small) var(--border-radius-small) 0;
 }
 
 .about-table th {
     text-align: center;
-    border-radius: 10px;
+    border-radius: var(--border-radius-small);
     font-weight: var(--fontweight-bold);
     background-color: var(--primary-color-bright);
 }
@@ -268,7 +277,7 @@ figcaption {
         padding: 0 20px 20px 20px;
         border: 0px;
         width: auto;
-        border-radius: 20px;
+        border-radius: var(--border-radius-big);
     }
 
     .work-list__item:last-child {
@@ -292,7 +301,7 @@ button,
     background-color: var(--background-color);
     text-decoration: none;
     border: solid 2px var(--primary-color);
-    border-radius: 20px;
+    border-radius: var(--border-radius-button);
     padding: 4pt 10pt 4pt 10pt;
     margin: 5px 0 5px 0;
     transition: 0.1s background-color;
@@ -312,7 +321,7 @@ button:focus,
 input,
 textarea {
     border: 1px solid var(--primary-color);
-    border-radius: 5px;
+    border-radius: var(--border-radius-input);
     width: 200px;
 }
 
@@ -447,6 +456,9 @@ textarea:focus {
 }
 
 
+
+
+
 /* Responsive */
 
 @media all and (max-width: 750px) {
@@ -471,7 +483,7 @@ textarea:focus {
     }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 501px) and (max-width: 750px) {
     .work-list {
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
@@ -486,7 +498,7 @@ textarea:focus {
     }
 }
 
-@media all and (min-width: 750px) and (max-width: 1000px) {
+@media all and (min-width: 751px) and (max-width: 1000px) {
     .work-list {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
@@ -510,7 +522,7 @@ textarea:focus {
     .profile {
         margin: 20px auto;
     }
-    
+
     .profile__figure {
         float: none;
         margin: 0 auto;
@@ -521,14 +533,16 @@ textarea:focus {
     .about-table td {
         display: block;
     }
+
     .about-table td:first-child {
         text-align: center;
-        border-radius: 10px 10px 0 0;
+        border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
         font-weight: var(--fontweight-bold);
     }
+
     .about-table td:last-child {
         text-align: justify;
-        border-radius: 0 0 10px 10px;
+        border-radius: 0 0 var(--border-radius-small) var(--border-radius-small);
     }
 }
 
@@ -536,11 +550,11 @@ textarea:focus {
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter */
 html {
     overflow-y: scroll;
-} 
+}
 
 @supports (scrollbar-gutter: stable) {
     html {
         overflow-y: auto;
         scrollbar-gutter: stable both-edges;
     }
-} 
+}
