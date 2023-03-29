@@ -7,6 +7,8 @@
     --color4: #CCB368;
     --color5: #C25ECC;
     --primary-color-bright: #f5f1fb;
+    --secondary-color-bright: #e8ebf9;
+    --tertiary-color-bright: #ebf7e0;
     --text-color: black;
     --background-color: white;
     --highlight-textcolor: white;
@@ -134,6 +136,10 @@ main p {
     height: 30px;
 }
 
+.invisible {
+    display: none;
+}
+
 
 
 /* Text and links */
@@ -179,7 +185,7 @@ figcaption {
 
 /* Content specific */
 
-.profile {
+.content-narrow {
     max-width: 700px;
     margin: 0 auto;
 }
@@ -194,16 +200,54 @@ figcaption {
     border-radius: 10%;
 }
 
-.about {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
 .pic-container {
     width: 80%;
 }
 
-/* Grid fallcback */
+.about-table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.about-table td, .about-table th {
+    vertical-align: top;
+    padding: 10px 10px;
+    border-style: none;
+}
+
+.about-table td:first-child {
+    text-align: end;
+    padding-left: 20px;
+    border-radius: 10px 0 0 10px;
+    min-width: fit-content;
+}
+
+.about-table td:last-child {
+    padding-right: 20px;
+    text-align: justify;
+    border-radius: 0 10px 10px 0;
+}
+
+.about-table th {
+    text-align: center;
+    border-radius: 10px;
+    font-weight: var(--fontweight-bold);
+    background-color: var(--primary-color-bright);
+}
+
+.about-table tr:nth-child(3n+1) td {
+    background-color: var(--secondary-color-bright);
+}
+
+.about-table tr:nth-child(3n+2) td {
+    background-color: var(--tertiary-color-bright);
+}
+
+.about-table tr:nth-child(3n+3) td {
+    background-color: var(--primary-color-bright);
+}
+
+/* Grid fallback */
 .work-list__item {
     float: left;
     width: 25%;
