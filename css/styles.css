@@ -101,7 +101,7 @@ main p {
 }
 
 .page-container {
-    padding: 4% 5% 2% 5%;
+    padding: 2% 5% 2% 5%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -137,6 +137,7 @@ main p {
     list-style-type: none;
     margin-bottom: 0;
     margin-top: 0;
+    line-height: 1.1;
 }
 
 .navigation-list li {
