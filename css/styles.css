@@ -329,9 +329,17 @@ tr.colored:nth-child(3n+3) td  {
     }
 }
 
+.contact-details{
+    padding: 20px 0;
+}
+
 .contact-item {
-    width: 200px;
-    margin-bottom: 10px;
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.text-primary {
+    color: var(--primary-color);
 }
 
 button,
@@ -344,10 +352,12 @@ button,
     background-color: var(--background-color);
     text-decoration: none;
     border: solid 2px var(--primary-color);
-    border-radius: var(--border-radius-button);
+    border-radius: 99px;
     padding: 4pt 10pt 4pt 10pt;
     margin: 5px 0 5px 0;
     transition: 0.1s background-color;
+    font-size: var(--fontsize-normal);
+    font-weight: var(--fontweight-normal);
 }
 
 button:hover,
@@ -365,7 +375,11 @@ input,
 textarea {
     border: 1px solid var(--primary-color);
     border-radius: var(--border-radius-input);
-    width: 200px;
+    width: 100%;
+    padding: 5px;
+    margin-top: 1px;
+    font-size: var(--fontsize-normal);
+    font-family: 'Rubik', sans-serif;
 }
 
 input:focus,
@@ -374,7 +388,9 @@ textarea:focus {
     background-color: var(--primary-color-bright);
 }
 
-
+#contact-message {
+    height: 100px;
+}
 
 
 

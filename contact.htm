@@ -58,7 +58,7 @@
             <main>
                 <h1>Contact</h1>
 
-                <div>
+                <div class="contact-details">
                     Telephone: <a href="#" aria-label="Call">Number</a><br>
                     E-Mail: <a href="#" aria-label="E-mail">Address</a>
                 </div>
@@ -69,11 +69,11 @@
 
                 <form action="#" method="post">
                     <div>
-                        <label for="contact-name">Name: (required) </label><br>
+                        <label for="contact-name">Name: <span class="text-primary">(required)</span> </label><br>
                         <input type="text" id="contact-name" name="name" class="contact-item" required>
                     </div>
                     <div>
-                        <label for="contact-email">E-mail: (required) </label><br>
+                        <label for="contact-email">E-mail: <span class="text-primary">(required)</span> </label><br>
                         <input type="email" id="contact-email" name="email" class="contact-item" required>
                     </div>
                     <div>
@@ -82,7 +82,7 @@
                             pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$">
                     </div>
                     <div>
-                        <label for="contact-message">Message: (required) </label><br>
+                        <label for="contact-message">Message: <span class="text-primary">(required)</span> </label><br>
                         <textarea id="contact-message" name="message" maxlength="999" class="contact-item"
                             required></textarea>
                     </div>
