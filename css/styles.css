@@ -52,21 +52,21 @@
     --border-radius-button: 20px;
     --border-radius-input: 5px;
 
-    --fontsize-normal: 16pt;
-    --fontsize-navigation: 14pt;
-    --fontsize-h1: 30pt;
-    --fontsize-h2: 24pt;
+    --fontsize-normal: 14pt;
+    --fontsize-navigation: 12pt;
+    --fontsize-h1: 28pt;
+    --fontsize-h2: 22pt;
     --fontweight-normal: 400;
     --fontweight-bold: 700;
 
     /* font sizes for smaller screens: */
     /* they are not repeats, but it's easier to have them together here */
-    --fontsize-h1-small: 28pt;
-    --fontsize-h1-smaller: 26pt;
-    --fontsize-h1-smallest: 24pt;
-    --fontsize-h2-small: 22pt;
-    --fontsize-h2-smaller: 20pt;
-    --fontsize-h2-smallest: 18pt;
+    --fontsize-h1-small: 26pt;
+    --fontsize-h1-smaller: 24pt;
+    --fontsize-h1-smallest: 22pt;
+    --fontsize-h2-small: 20pt;
+    --fontsize-h2-smaller: 18pt;
+    --fontsize-h2-smallest: 16pt;
 }
 
 * {
