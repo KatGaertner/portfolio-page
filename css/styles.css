@@ -58,6 +58,7 @@
     --fontsize-h2: 22pt;
     --fontweight-normal: 400;
     --fontweight-bold: 700;
+    --line-height: 1.5;
 
     /* font sizes for smaller screens: */
     /* they are not repeats, but it's easier to have them together here */
@@ -95,7 +96,7 @@ main {
 }
 
 main p {
-    line-height: 1.6;
+    line-height: var(--line-height);
     text-align: justify;
 }
 
@@ -259,6 +260,8 @@ figcaption {
     vertical-align: top;
     padding: 10px 10px;
     border-style: none;
+    font-size: var(--fontsize-normal);
+    line-height: var(--line-height);
 }
 
 .about-table td:first-child {
