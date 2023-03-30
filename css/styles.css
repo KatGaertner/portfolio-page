@@ -264,19 +264,19 @@ figcaption {
 .about-table td:first-child {
     text-align: end;
     padding-left: 20px;
-    border-radius: var(--border-radius-small) 0 0 var(--border-radius-small);
+    border-radius: var(--border-radius-big) 0 0 var(--border-radius-big);
     min-width: fit-content;
 }
 
 .about-table td:last-child {
     padding-right: 20px;
     text-align: justify;
-    border-radius: 0 var(--border-radius-small) var(--border-radius-small) 0;
+    border-radius: 0 var(--border-radius-big) var(--border-radius-big) 0;
 }
 
 .about-table th {
     text-align: center;
-    border-radius: var(--border-radius-small);
+    border-radius: var(--border-radius-big);
     font-weight: var(--fontweight-bold);
     background-color: var(--primary-color-bright);
 }
@@ -575,12 +575,14 @@ textarea:focus {
     }
 
     .about-table td:first-child {
+        padding: 20px 20px 0 20px;
         text-align: center;
         border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
         font-weight: var(--fontweight-bold);
     }
 
     .about-table td:last-child {
+        padding: 10px 20px 20px 20px;
         text-align: justify;
         border-radius: 0 0 var(--border-radius-small) var(--border-radius-small);
     }
