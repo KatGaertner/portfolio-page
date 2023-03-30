@@ -107,16 +107,13 @@ main p {
     flex-direction: column;
 }
 
-.page-footer {
-    margin-top: auto;
-}
-
 .page-header {
     border-bottom: 2px solid var(--primary-color);
     display: flex;
     width: 100%;
     padding: 0 10px 10px 10px;
     align-items: flex-end;
+    background-color: var(--background-color);
 }
 
 .page-header__item {
@@ -160,6 +157,7 @@ main p {
 }
 
 .page-footer {
+    margin-top: auto;
     border-top: 2px solid var(--primary-color);
     clear: both;
     display: flex;
