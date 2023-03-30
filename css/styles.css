@@ -243,9 +243,22 @@ figcaption {
     margin: 0 auto;
 }
 
+.index .content-wrap {
+    flex-grow: 1;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.index .page-footer {
+    margin-top: 0;
+}
+
 .profile__figure {
     float: left;
     max-width: 250px;
+    margin-left: 5px;
 }
 
 .profile__photo {
@@ -586,7 +599,7 @@ textarea:focus {
 
 @media all and (max-width: 600px) {
     .profile {
-        margin: 20px auto;
+        margin: 10px auto;
     }
 
     .profile__figure {
