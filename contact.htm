@@ -9,8 +9,8 @@
 
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
@@ -67,14 +67,14 @@
                     Or send me a message:
                 </p>
 
-                <form action="#" method="post">
+                <form action="#" method="post" id="contact-form">
                     <div>
                         <label for="contact-name">Name: <span class="text-primary">(required)</span> </label><br>
-                        <input type="text" id="contact-name" name="name" class="contact-item" required>
+                        <input type="text" id="contact-name" name="name" class="contact-item">
                     </div>
                     <div>
                         <label for="contact-email">E-mail: <span class="text-primary">(required)</span> </label><br>
-                        <input type="email" id="contact-email" name="email" class="contact-item" required>
+                        <input type="email" id="contact-email" name="email" class="contact-item">
                     </div>
                     <div>
                         <label for="contact-phone">Telephone: </label><br>
@@ -84,7 +84,7 @@
                     <div>
                         <label for="contact-message">Message: <span class="text-primary">(required)</span> </label><br>
                         <textarea id="contact-message" name="message" maxlength="999" class="contact-item"
-                            required></textarea>
+                            ></textarea>
                     </div>
                     <input type="submit" value="Send message" class="button contact-item">
                 </form>
@@ -103,6 +103,7 @@
         </footer>
     </div>
     <script src="js/tota11y.min.js"></script>
+    <script src="js/formvalidation.js"></script>
 </body>
 
 </html>

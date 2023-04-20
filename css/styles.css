@@ -356,6 +356,12 @@ tr.colored:nth-child(3n+3) td {
     margin-bottom: 15px;
 }
 
+.error-message {
+    margin-top: -10px;
+    margin-bottom: 15px;
+    color: red;
+}
+
 .text-primary {
     color: var(--primary-color);
 }
