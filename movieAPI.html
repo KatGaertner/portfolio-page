@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Work | Kathrin's Portfolio Page</title>
+    <title>meetApp | Kathrin's Portfolio Page</title>
     <link rel="shortcut icon" href="img/ico_favicon.svg" />
 
     <link
@@ -13,6 +13,28 @@
     />
     <link rel="stylesheet" type="text/css" href="css/style.production.css" />
     <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+    <style>
+      table td,
+      table td *,
+      table th {
+        text-align: left;
+        vertical-align: top;
+        padding: 3px 6px;
+      }
+      table,
+      th,
+      td {
+        /* border: 1px solid black; */
+        border-collapse: collapse;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #ddd;
+      }
+      table {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
   </head>
 
   <body>
@@ -91,10 +113,8 @@
                 >
               </li>
               <li role="presentation">
-                <span
-                  role="menuitem"
-                  class="navigation-list__item navigation-list__item--active"
-                  >Work</span
+                <a href="work.htm" role="menuitem" class="navigation-list__item"
+                  >Work</a
                 >
               </li>
               <li role="presentation">
@@ -109,57 +129,21 @@
           </nav>
         </header>
 
-        <main>
-          <h1>My Work</h1>
-          <div class="work-list">
-            <div class="work-list__item slide-up colored">
-              <h2>meetApp</h2>
-              <p>
-                meetApp is a serverless, progressive web application developed
-                using React, following a test-driven development approach. The
-                application seamlessly integrates with the Google Calendar API
-                to retrieve upcoming events, offering users options to filter
-                events by city and providing interactive event visualizations.
-              </p>
-              <p><a href="meetApp.html">read more</a></p>
-              <p><a href="https://katgaertner.github.io/meetApp/">visit the app</a></p>
-            </div>
-
-            <div class="work-list__item slide-up colored">
-              <h2>myFlix</h2>
-              <p>
-                myFlix is a movie database app that provides users with a
-                collection of movies, directors and genres. The app provides a
-                seamless user experience with features such as user
-                authentication, favorites list management, and user account
-                management.
-              </p>
-              <p><a href="myflix.html">read more</a></p>
-              <p><a href="https://katgaertner.github.io/myFlix/">visit the app</a></p>
-            </div>
-
-            <div class="work-list__item slide-up colored">
-              <h2>movieAPI</h2>
-              <p>
-                A RESTful API that will provide interaction with a movie
-                database and a user database. The API offers endpoints for
-                information on movies, directors and genres, as well as
-                interactions with a user database, like signing up, logging in
-                and changing user data.
-              </p>
-              <p><a href="movieAPI.html">read more</a></p>
-            </div>
-
-            <div class="work-list__item slide-up colored">
-              <h2>Pokedex</h2>
-              <p>
-                A simple webpage that uses the <a href="https://pokeapi.co/">PokeAPI</a> to fetch a list of Pokemon to browse. Clicking on a Pokemon shows some of its details.
-              </p>
-              <p><a href="pokedex.html">read more</a></p>
-              <p><a href="https://katgaertner.github.io/pokedex/">visit the app</a></p>
-            </div>
+        <main class="content-narrow">
+          <p><a href="work.htm">&larr; back to my works</a></p>
+          <div class="center">
+            <a
+              href="https://github.com/KatGaertner/movie_api/"
+              class="button"
+              style="display: inline-flex; align-items: center"
+              ><div>&#10024;&nbsp;</div>
+              <div>Visit the movieAPI repository on GitHub</div>
+              <div>&nbsp;&#10024;</div></a
+            >
           </div>
-          <!-- <div class="clearfix"></div> -->
+          <md-block
+            src="https://raw.githubusercontent.com/KatGaertner/movie_api/main/readme.md"
+          ></md-block>
         </main>
       </div>
       <footer class="page-footer">
@@ -183,5 +167,21 @@
       </footer>
     </div>
     <script src="js/tota11y.min.js"></script>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <script>
+      const mdBlock = document.querySelector("md-block");
+      let observer = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+          if (mutation.target === mdBlock && mdBlock.rendered === "remote") {
+            mutation.target.innerHTML = mutation.target.innerHTML.split(
+              '<h1 id="project-status">'
+            )[0];
+          }
+        });
+      });
+      observer.observe(mdBlock, {
+        attributes: true,
+      });
+    </script>
   </body>
 </html>
